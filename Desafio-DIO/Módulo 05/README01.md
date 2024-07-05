@@ -1,6 +1,6 @@
 # DESAFIO DE PROJETO - DESAFIO 01
 
-## Mósulo 05 - Dashboard Gerencial
+## Módulo 05 - Dashboard Gerencial
 
 O arquivo '.pbix' é o arquvivo de Power BI contendo as modificações do dash original.
 
