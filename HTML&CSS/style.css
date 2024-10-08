@@ -1,51 +1,76 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
-img {
-  width: 100%;
+/* flexbox */
+.row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
 }
 
 .logo {
-    margin-left: 50px;
+  flex: 30%;
+  padding: 20px;
 }
 
-.capa {
-    display: block;
-    margin: 20px auto;
+.header {
+  flex: 70%;
+  text-align: center;
+  padding: 32px;
 }
 
-.conteudo {
-    max-width: 890px;
-    margin: auto;
+.header > div {
+padding: 20px;
+text-align: center;
+line-height: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links > div {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
+}
+
+.links a:hover {
+  background-color: black;
+  color: white;
+}
+
+.column {
+  flex: 25%;
+  max-width: 75%;
+  background-color: #868080;
+  padding: 0 4px;
+}
+
+h1, h2, h3 {
+  color: blue; /*<!- aqui mudamos a cor do texto dentro de h1->*/
+  font-family: verdana; /*<!- aqui mudamos a fonte do texto->*/
+  font-size: 300%; /*<!- aqui mudamos o tamanho da fonte->*/
+  text-align: center; /*<!- aqui é o alinhamento do texto->*/
+}
+
+p {
+  border: 2px solid powderblue; /*<!- borda de 2pixels->*/
+  padding: 3px; /*<!-- Espaçamento entre o texto e a borda (todas as bordas de todos os lados) -->*/
+  margin: 10px; /*<!- Margem de todas as bordas com a página->*/
+  color: rgb(100, 0, 0); /*<!- aqui mudamos a cor do texto do parágrafo->*/
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 footer {
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-}
-/* COR NOS LINKS */
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: blue;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+  text-align: center;
 }
