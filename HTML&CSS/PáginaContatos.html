@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+body {
+background-color: OldLace;
+}
+</style>
 <body>
-    <header>
-        <img src="imagens\LOGO.png" class="logo" style="width:80px;height:80px">
-        <nav>
-            <a href="index.html"><b>Home</b></a>
-            <a href="QuemSomos.html"><b>Quem Somos</b></a>
-            <a href="PáginaContatos.html"><b>Contato</b></a>
-        </nav>
-    </header>
+    <div class="row">
+        <div class="logo"><a><img src="imagens\LOGO.png" class="logo" style="width:200px;height:200px"></div>
+    
+    <div class="links">
+        <div><a href="index.html"><b>Home</b></a></div>
+        <div><a href="QuemSomos.html"><b>Quem Somos</b></a></div>
+        <div><a href="PáginaContatos.html"><b>Contato</b></a></div>
+    </div>
     
     <div class="conteudo">
     <h2>Entre em Contato</h2>
@@ -27,25 +32,25 @@
     <form action="">
         
         <label>Seu e-mail:</label>
-        <div>
+        <div class="b">
             <input type="email" id="email" name="email">
         </div>
 
         <label>Assunto:</label>
-        <div>
+        <div class="b">
             <input type="text" id="assunto" name="assunto">
         </div>
 
         <label>Descrição:</label>
-        <div>
+        <div class="b">
             <textarea></textarea>
         </div>
         <input type="submit" value="Enviar">
     </form>
-</div>
+    </div>
 
     <footer>
-        Todos os direitos reservados
+        Desenvolvido por PROGRAMAÇÂO. Todos os direitos reservados.
     </footer>
 
 </body>
