@@ -26,13 +26,26 @@
         <h1>LOGIN</h1><br>
         <div id="form_frente">
             <form action="/login" method="POST">
-                <label for="nome"> E-MAIL </label>
-                <input type="email" name="email" placeholder="Inserir um e-mail " id="email" required><br><br>
-                <label for="nome"> SENHA </label>
-                <input type="password" name="password" placeholder="*********" id ="pwd" required>
-                <br><br><br><br>
-                <input type="submit" value="ACESSAR">
-
+                <div class="mb-3 mt-3">
+                    <label for="nome" class="form-label"> E-MAIL: </label>
+                    <input type="email" class="form-control"  id="email" name="email" placeholder="Inserir um e-mail " required><br><br>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </di v>
+                <div class="mb-3">
+                    <label for="nome" class="form-label"> SENHA: </label>
+                    <input type="password" class="form-control" id ="pwd" name="password" placeholder="*********" required>
+                    <br><br><br><br>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+                    <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Check this checkbox to continue.</div>
+                </div>
+                 <input type="submit" value="ACESSAR">
             </form>
         </div>
     </div>
