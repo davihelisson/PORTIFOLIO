@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+{% block content %}
+<style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    </style>
+<body>
+    <h1>Primeira página de  {{user}}</h1>
+    <h2>Olá, {{user}}. Seja bem vindo a sua primeira página Web.</h2>
+    <br><br>
+        <p>Olha só. Essa daqui é minha primeira página</p><br>
+        <p>Não espere muito disso aqui.</p><br>
+        <p>É apenas um teste</p><br>
+        <p>Digite seu nome na URL e ele vai aparecer aqui:<br> {{content}}</p>
+    <br><br>
+        <p>Abaixo vamos inserir um código Python que vai exibir apenas os números pares de 0 a 10:</p>
+        {% for x in range(11) %}
+            {% if x % 2 == 0%}
+                <p>{{x}}</p>
+            {% endif %}
+        {% endfor %}
+        <br><br>
+        <p>Agora vamos colocar uma lista de nomes definidos no código Python:</p>
+        {% for x in content1 %}
+            <p>{{x}}</p>
+        {% endfor %}
+        {% endblock %}
+</body>
+</html>

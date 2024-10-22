@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %} LOGIN {% endblock %}
+{% block content %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <h2>{{msg}}</h2>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<style>    
+    body{
+    background: url(../static/imagens/DADOS_NUMERICOS.jpg) no-repeat;
+    }
+</style>
+
+<body>
+    <div id="form_fundo">
+        <h1>LOGIN</h1><br>
+        <div id="form_frente">
+            <form action="/login" method="POST">
+                <label for="nome"> E-MAIL </label>
+                <input type="email" name="email" placeholder="Inserir um e-mail "><br><br>
+                <label for="nome"> SENHA </label>
+                <input type="password" name="password" placeholder="*********">
+                <br><br><br><br>
+                <input type="submit" value="ACESSAR">
+
+            </form>
+        </div>
+    </div>
+</body>
+{% endblock %}
