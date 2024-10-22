@@ -1,0 +1,12 @@
+COMANDOS
+
+
+COMANDOS QUE DEVEM SER DIGITADOS PARA RODAR O PYTHON NO AMBIENTE VIRUTUAL
+>> através do CMD, acessar a pasta onde está o arquivo python que vai ser executado:
+>> Digitar: py -3 -m venv .venv
+>> Digitar: .venv\Scripts\activate
+>> Digitar: python "Nome_do_Arquivo.py"
+
+COMANDOS PARA INSTALAR O FLASK CASO NÃO ESTEJA INSTALADO
+>> pip install flask flask-login flask-sqlalchemy
+(Já vai instalar o flask, a parte de login e o sql)
