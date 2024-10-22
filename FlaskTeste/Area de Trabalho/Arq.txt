@@ -1,0 +1,1 @@
+Nesse arquvio estão todos os arquivos da área de Trabalho referentes ao projeto do FLASK
