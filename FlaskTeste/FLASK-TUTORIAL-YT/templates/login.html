@@ -11,60 +11,71 @@
         {% endif %}
     {% endwith%}
 
-<form action="#" method="post">
-    <div class="row mb-3">
-        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-        <div class="col-sm-10">
-            <input type="name" class="form-control" id="inputName" name="name">
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail" name="email" value="{{email if email}}"/>
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-        <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword" name="password">
-        </div>
-    </div>
-    <fieldset class="row mb-3">
-        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-        <div class="col-sm-10">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                <label class="form-check-label" for="gridRadios1">
-                    First radio
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">
-                    Second radio
-                </label>
-            </div>
-            <div class="form-check disabled">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"
-                    disabled>
-                <label class="form-check-label" for="gridRadios3">
-                    Third disabled radio
-                </label>
-            </div>
-        </div>
-    </fieldset>
-    <div class="row mb-3">
-        <div class="col-sm-10 offset-sm-2">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                <label class="form-check-label" for="gridCheck1">
-                    Example checkbox
-                </label>
-            </div>
-        </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
+    <style>    
+        body{
+        background: url(../static/imagens/DADOS_NUMERICOS.jpg);
+        }
+    </style>
 
+        <div id="form_fundo">
+            <form action="#" method="post">
+                <div class="row mb-3">
+                    <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="inputName" name="name">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" name="email" value="{{email if email}}"/>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" name="password">
+                    </div>
+                </div>                
+                <div class="row mb-3">
+                    <div class="col-sm-6 offset-sm-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Example checkbox
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Sign in
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Acesso</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Login Successful!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary" id="modalOkButton">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            document.getElementById('modalOkButton').addEventListener('click', function () {
+                
+                var modal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+                modal.hide();
+                window.location.href = 'user';
+            });
+        </script>
+        
 {% endblock %}
