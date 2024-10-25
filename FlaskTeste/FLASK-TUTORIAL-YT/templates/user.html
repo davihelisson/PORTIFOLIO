@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title%}USER{% endblock %}
+{% block content %}
+    {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <p>{{msg}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith%}
+
+    <h1> HELLO, {{user}} </h1><br>
+        <p>The thing scripted in nav-bar is "{{user}}".</p>
+        <p>This is the 'user', to test the redirectioning of pages</p>
+{% endblock %}
