@@ -10,7 +10,7 @@ app.secret_key = "secret"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Configurando o armazenamento temporário de login
-app.permanent_session_lifetime = timedelta(minutes=1)
+app.permanent_session_lifetime = timedelta(minutes=2)
 with app.app_context():
 
 
@@ -33,6 +33,18 @@ with app.app_context():
     @app.route("/")
     def home():
         return render_template("index.html")
+    
+    @app.route("/page_01")
+    def page_01():
+        return render_template("PAGE_01.html")
+    
+    @app.route("/page_02")
+    def page_02():
+        return render_template("PAGE_02.html")
+    
+    @app.route("/danger")
+    def danger():
+        return render_template("danger.html")
 
 
     # Aqui vamos fazer uma página para vizualizar os dados salvos
