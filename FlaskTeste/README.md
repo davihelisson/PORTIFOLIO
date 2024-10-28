@@ -7,6 +7,6 @@ Há mais pastas para separar os arquivos.
 Veja o arvivo COMANDO.TXT para poder rodar de boas na máquina.
 
 #### IMPORTANTE
-* Baixe as imagens e o CSS da pasta 'app' pois lá há uma formatação melhor para a página.
-* Veja em outros arquivos da página login o que foi utilizado e copie
-* A página de 'registro' dentro da pasta 'Projects\flaskr\templates\auth' pode ajudar na página de cadastro.
+#### Atualização de 28/10/2024
+* Baixe TODOS os arquivos da pasta "FLASK-TUTORIAL-YT"
+* Fica mais fácil se você conseguir fazer um git-clone para o PC da FATEC > Faça o teste assim que entrar na sala de aula.
