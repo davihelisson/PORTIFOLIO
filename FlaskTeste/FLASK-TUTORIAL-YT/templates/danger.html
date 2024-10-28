@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block title%}PAGE_01{% endblock %}
+{% block content %}
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .header {
+        text-align: justify;
+        padding: 32px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Danger Zone</h1>
+        <p>You shouldn't have come to this page.<br>
+            But while you're here, check out some bad memes I copied from a website.<br>
+            It's too late to question your sanity. Once you're in this room, you'll have no choice but to hug your knees in the fetal position and cry your eyes out..<br><br><h3>IT'S YOUR FAULT.</h3></p>
+
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="..\static\imagens\memes\SOCIEDADE - EU.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\SOL.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\SONIC DO FRACASSO.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\SOU APENAS ANTIPÁTICO.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\SOU PACIENTE.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\SUCO ADES.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\TÁ TUDO BEM ROBIN" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="..\static\imagens\memes\TEM QUE RESPONDER.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\TEM SACOLA.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\TEORIA E PRÁTICA.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\THE EATLES.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\TOCANDO A VIDA.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\TODO SONHO TEM UM SIGNIFICADO.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="..\static\imagens\memes\TOMARA QUE SEJA UM BUG.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\TRABALHO CULPOSO.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\TRATAMENTO PARA ANTIVAX" style="width:100%">
+            <img src="..\static\imagens\memes\U TEM SÍLIOS.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\UM CICLO SEM FIM" style="width:100%">
+            <img src="..\static\imagens\memes\UM FÍSICO-TURISTA.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\VAMOS VER.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="..\static\imagens\memes\VIRANDO O HOMEM ARANHA.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\VISITA NO ZOO.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\VOCÊ PENSA DEMAIS.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\VOCE VAI FICAR OK.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\XURASTEI OR XURAGOU.jpg" style="width:100%">
+            <img src="..\static\imagens\memes\ZENIALS.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <br><br><br><br>
+    {% endblock %}
