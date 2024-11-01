@@ -1,5 +1,13 @@
+card-text-p1 {
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
 
-img {
+card-text-p2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+figure {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
