@@ -1,23 +1,57 @@
-card-text-p1 {
-    font-family: 'Courier New', Courier, monospace;
-    
-  }
-
-card-text-p2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-figure {
+#foto2 {
+    width: 150px;
     border: 1px solid #ddd;
-    border-radius: 4px;
     padding: 5px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
-    border-radius: 35%;
+    border-radius: 100%;
 }
 
 
+#foto1 {
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border-radius: 15%;
+}
+
+
+
+.flex-item-left {
+    background-color: #ffffff;
+    padding: 10px;
+    flex: 50%;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.flex-item-right {
+    background-color: rgb(216, 235, 255);
+    padding: 20px;
+    flex: 50%;
+    border-radius: 0px 0px 50px 50px;
+}
+
+@media (max-width: 1500px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+
+#section2{
+    background-color: #e2e2e2;
+}
+
+#section3{
+    background-color: #c4c4c4;
+}
+
+#section4{
+    background-color: #a7a5a5;
+}
 
 /* FOOTER */
 footer {
@@ -29,12 +63,12 @@ footer {
     margin-top: auto;
 }
 
-footer > div {
+footer>div {
     align-items: center;
 }
 
 footer h1 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 footer p {
