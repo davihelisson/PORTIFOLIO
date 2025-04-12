@@ -1,0 +1,46 @@
+Questão 1
+Quais são as vantagens e desvantagens de usar a Linguagem Java para programação:
+
+
+Resposta:
+A linguagem Java tem uma longa história e é amplamente utilizada, o que traz vantagens significativas, mas também algumas desvantagens. Vou listar algumas de cada:
+
+Vantagens
+- Portabilidade: Graças ao conceito de "Write Once, Run Anywhere" (Escreva uma vez, execute em qualquer lugar), o código Java pode ser executado em qualquer plataforma com u
+
+- Comunidade Ampla: Java tem uma comunidade ativa e extensa, o que significa uma abundância de bibliotecas, frameworks e suporte técnico disponíveis.
+
+- Segurança: A linguagem possui recursos integrados para prevenir falhas comuns de segurança, como ponteiros nulos ou acessos diretos à memória.
+
+- Linguagem Orientada a Objetos (OOP): Facilita a criação de sistemas escaláveis, modulares e reutilizáveis.
+
+- Ferramentas e Ecossistema: Muitas IDEs robustas (como IntelliJ IDEA e Eclipse) e frameworks populares (Spring, Hibernate) estão disponíveis para desenvolvimento em Java.
+
+- Desempenho: Apesar de ser uma linguagem interpretada, o uso de Just-In-Time (JIT) na JVM melhora a performance
+
+- Multithreading: Suporte integrado para trabalhar com múltiplos threads, algo essencial em aplicativos concorrentes.
+
+
+Desvantagens
+Sintaxe Verbosa: Comparada a linguagens mais recentes, como Python, Java pode parecer excessivamente detalhista, o que pode tornar o código longo e menos legível.
+
+Curva de Aprendizado Inicial: Para iniciantes, conceitos como JVM, OOP e gerenciamento de memória podem ser complexos.
+
+Uso Intensivo de Memória: Programas em Java tendem a consumir mais memória em comparação a linguagens mais leves.
+
+Velocidade: Embora mais rápido que outras linguagens interpretadas, como Python, pode ser mais lento que linguagens compiladas como C++.
+
+Foco na Orientação a Objetos: Essa abordagem pode não ser ideal para todos os tipos de aplicações, especialmente as que podem se beneficiar de paradigmas funcionais.
+
+
+
+
+
+
+
+
+
+
+
+
+
