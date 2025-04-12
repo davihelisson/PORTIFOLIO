@@ -11,7 +11,7 @@ Abaixo estão as questões feitas para o COPILOT para geração de texto.
 ### Geração de Imagens
 Abaixo estão as questões feitas para o COPILOT para geração de imagens.
 1) Crie uma ilustração de um gato astronauta flutuando dentro de uma nave espacial observando a Terra pela janela.
-2) Gere a imagem de um triceratops tomando agua em um lugar desértico.
+2) Gere a imagem de uma galáxia com dois braços espirais, um bojo central bem luminoso. Essa galáxia tem que ter tons de rosa, verde e azul.
 3) Gere a imagem de uma cidade futurista iluminada à noite, com carros voadores e arranha-céus de vidro
 
 ### Geração de código
